@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    /*is so the padding and the border will 
+no be added to the height or with but taken from it*/
+}
+
+body {
+
+    margin: 0;
+
+
+}
+
+header {
+    background-color: #74c69d;
+    width: 100%;
+
+    min-height: 50vh;
+    padding: 120px 0;
+    color: white;
+    border-bottom: 1px solid black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    /*is so the padding and the border will no be aded to the height or the width taken from it*/
+}
+
+img {
+    width: 100%;
+}
+
+#principal-container {
+    display: flex;
+    width: 83.33%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#special-width {
+    width: 50%;
+}
+
+
+
+
+div {
+    width: 40%;
+
+}
+
+img {
+
+    width: 100%;
+}
+
+header a:hover {
+
+    background-color: black;
+    color: white;
+
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 83.33%;
+    margin: 0 auto;
+}
+
+section div { 
+    
+    margin: 0 auto;
+    text-align:center;
+
+}
+
+
+header a:hover {
+
+    background-color: black;
+    color: white;
+
+}
+
+
+
+ header a {
+
+        color: black;
+        background-color: white;
+        /*
+    width: 100px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+
+    */
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+    }
+
+    section a { 
+
+background-color: black;
+color: white;
+padding: 10px 30px; 
+
+}
+
+#special-image{
+    width: 25%;
+}
+
+.columns {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px){
+
+
+header img { display: none;}
+header div { width: 100%;}
+
+
+}
+
+@media (max-width: 768px) {
+
+    #principal-container {
+
+        flex-direction: column;
+
+    }
+
+    div,
+    #special-width {
+        width: 100%;
+    }
+
+    #principal-container div {
+        margin-bottom: 10px;
+
+    }
+
+    header img { display: inline-block;}
+
+
+}
